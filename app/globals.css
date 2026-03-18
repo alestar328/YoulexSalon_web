@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-youlex-black antialiased;
+  }
+
+  ::selection {
+    @apply bg-youlex-black text-white;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-width {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+  }
+
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+
+  .heading-3 {
+    @apply text-xl md:text-2xl font-semibold tracking-tight;
+  }
+
+  .body-text {
+    @apply text-youlex-gray leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-youlex-black text-white px-8 py-4 text-sm font-medium hover:bg-neutral-800 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center border border-youlex-black text-youlex-black px-8 py-4 text-sm font-medium hover:bg-youlex-black hover:text-white transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

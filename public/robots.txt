@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://youlexsalon.com/sitemap.xml
